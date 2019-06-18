@@ -1,0 +1,25 @@
+{
+  "name": "logger",
+  "version": "0.1.0",
+  "description": "stringify and color obj passed to the template we want to log",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alevoid/logger.git"
+  },
+  "keywords": [
+    "tagged",
+    "template",
+    "template",
+    "literals"
+  ],
+  "author": "Pasquale Coretti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alevoid/logger/issues"
+  },
+  "homepage": "https://github.com/Alevoid/logger#readme"
+}
