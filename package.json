@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c ./rollup.config.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "test": "yarn mocha --require @babel/register --recursive --exit src/test/*.js"
   },
   "repository": {
@@ -27,7 +29,14 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/register": "^7.4.4",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.0.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-prettier": "^3.1.0",
     "mocha": "^6.1.4",
+    "prettier": "^1.18.2",
     "rollup": "^1.16.1",
     "rollup-plugin-babel": "^4.3.2",
     "should": "^13.2.3"
