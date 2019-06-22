@@ -1,5 +1,5 @@
-import { sortLogRequest } from "./helpers";
-import { TYPE } from "./consts";
+import { sortLogRequest } from './helpers';
+import { TYPE } from './consts';
 
 const log = {
   info: (strings, ...values) => {
@@ -10,7 +10,7 @@ const log = {
   },
   log: (strings, ...values) => {
     sortLogRequest(TYPE.LOG, strings, ...values);
-  }
+  },
 };
 
 export default log;

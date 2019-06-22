@@ -1,9 +1,9 @@
-import should from "should";
+import should from 'should';
 
-import { logger } from "../helpers";
-import { TYPE, COLORS } from "../consts";
+import { logger } from '../helpers';
+import { TYPE, COLORS } from '../consts';
 
-const foobar = { foo: "bar" };
+const foobar = { foo: 'bar' };
 
 describe(`Logger function should return 
       1) correct types for 
@@ -15,8 +15,8 @@ describe(`Logger function should return
   it(`for "LOG" method`, done => {
     const [stringToLog, colors] = logger(
       TYPE.LOG,
-      ["Foobar ", " bar"],
-      [foobar]
+      ['Foobar ', ' bar'],
+      [foobar],
     );
     const cssDirectiveOccurenceCount = stringToLog.match(/%c/g);
 
@@ -32,8 +32,8 @@ describe(`Logger function should return
   it(`for "Info" method`, done => {
     const [stringToLog, colors] = logger(
       TYPE.INFO,
-      ["Foobar ", " bar"],
-      [foobar]
+      ['Foobar ', ' bar'],
+      [foobar],
     );
     const cssDirectiveOccurenceCount = stringToLog.match(/%c/g);
 
@@ -49,8 +49,8 @@ describe(`Logger function should return
   it(`for "Error" method`, done => {
     const [stringToLog, colors] = logger(
       TYPE.ERROR,
-      ["Foobar ", " bar"],
-      [foobar]
+      ['Foobar ', ' bar'],
+      [foobar],
     );
     const cssDirectiveOccurenceCount = stringToLog.match(/%c/g);
 
