@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "test": "yarn mocha --require @babel/register --recursive --exit src/test/*.js",
-    "publish-please": "publish-please",
+    "publish-please": "publish-please config",
     "prepublishOnly": "publish-please guard"
   },
   "repository": {
@@ -39,6 +39,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "mocha": "^6.1.4",
     "prettier": "^1.18.2",
+    "publish-please": "^5.4.3",
     "rollup": "^1.16.1",
     "rollup-plugin-babel": "^4.3.2",
     "should": "^13.2.3"
