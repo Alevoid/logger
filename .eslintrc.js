@@ -31,7 +31,6 @@ module.exports = {
     ],
     eqeqeq: ["error", "always"],
     "no-var": ["error"],
-    "object-curly-spacing": ["error", "always"],
-    "no-console": ["error", { allow: ["error", "warn"] }]
+    "object-curly-spacing": ["error", "always"]
   }
 };

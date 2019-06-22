@@ -1,4 +1,4 @@
-import { TYPE, COLORS } from "./consts";
+import { TYPE, COLORS } from './consts';
 
 export function sortLogRequest(type, strings, ...values) {
   if (Array.isArray(strings)) {
@@ -24,15 +24,15 @@ export function logger(logType, strings, ...values) {
     }
   };
 
-  const addCssDirectiveTo = value => "%c" + value;
+  const addCssDirectiveTo = value => '%c' + value;
 
-  var str = "";
-  var color = getColorFromType(logType);
-  var colors = [];
+  let str = '';
+  let color = getColorFromType(logType);
+  let colors = [];
 
   for (let i = 0; i < strings.length; i++) {
     if (i > 0) {
-      if (values[i - 1] && typeof values[i - 1] == "object") {
+      if (values[i - 1] && typeof values[i - 1] === 'object') {
         if (values[i - 1] instanceof Error) {
           if (values[i - 1].stack) {
             continue;
@@ -44,7 +44,10 @@ export function logger(logType, strings, ...values) {
             str += addCssDirectiveTo(strings[i]);
             colors.push(COLORS.NOT_A_VARIABLE);
             continue;
-          } catch (err) {}
+            // eslint-disable-next-line no-empty
+          } catch (err) {
+            //TODO: catch
+          }
         }
       }
       str += addCssDirectiveTo(values[i - 1]);
