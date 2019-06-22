@@ -1,0 +1,15 @@
+{
+  "validations": {
+    "vulnerableDependencies": true,
+    "uncommittedChanges": true,
+    "untrackedFiles": true,
+    "sensitiveData": true,
+    "branch": "master",
+    "gitTag": true
+  },
+  "confirm": true,
+  "publishCommand": "yarn publish",
+  "publishTag": "latest",
+  "prePublishScript": "yarn test",
+  "postPublishScript": false
+}

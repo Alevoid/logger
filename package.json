@@ -7,7 +7,9 @@
     "build": "rollup -c ./rollup.config.js",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "test": "yarn mocha --require @babel/register --recursive --exit src/test/*.js"
+    "test": "yarn mocha --require @babel/register --recursive --exit src/test/*.js",
+    "publish-please": "publish-please",
+    "prepublishOnly": "publish-please guard"
   },
   "repository": {
     "type": "git",
