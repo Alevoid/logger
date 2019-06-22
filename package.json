@@ -1,6 +1,6 @@
 {
   "name": "template-logger",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "stringify and color obj passed to the template we want to log",
   "main": "lib/logger.js",
   "scripts": {
